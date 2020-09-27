@@ -1,0 +1,46 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>EmptyBotAdaptive</Name>
+    <Description>Empty bot for Adaptive dialogs.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>EmptyBotAdaptive</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="EmptyBotAdaptive.csproj" File="EmptyBotAdaptive.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <ProjectItem ReplaceParameters="true" TargetFileName="default.htm">default.htm</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BotController.cs">BotController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DeploymentTemplates" TargetFolderName="DeploymentTemplates">
+        <ProjectItem ReplaceParameters="true" TargetFileName="new-rg-parameters.json">new-rg-parameters.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="preexisting-rg-parameters.json">preexisting-rg-parameters.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="template-with-new-rg.json">template-with-new-rg.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="template-with-preexisting-rg.json">template-with-preexisting-rg.json</ProjectItem>
+      </Folder>
+      <Folder Name="Dialogs" TargetFolderName="Dialogs">
+        <ProjectItem ReplaceParameters="true" TargetFileName="RootDialog.cs">RootDialog.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AdapterWithErrorHandler.cs">AdapterWithErrorHandler.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="DialogBot.cs">DialogBot.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
